@@ -225,6 +225,9 @@ const books = [
   },
 ];
 
+/*
+/////////////////////////////////////////////
+////////// Destructuring Arrays
 // const [firstBook, secondBook] = books;
 // console.log(firstBook, secondBook);
 
@@ -238,7 +241,24 @@ const books = [
 // const [[, rating], [, ratingsCount]] = ratings;
 // console.log(rating, ratingsCount);
 
-const ratingStars = [63405, 1808];
-const [fiveStarRatings, oneStarRatings, threeStarRatings = 0] = ratingStars;
+// const ratingStars = [63405, 1808];
+// const [fiveStarRatings, oneStarRatings, threeStarRatings = 0] = ratingStars;
 
-console.log(fiveStarRatings, oneStarRatings, threeStarRatings);
+// console.log(fiveStarRatings, oneStarRatings, threeStarRatings);
+*/
+
+/////////////////////////////////////////////
+////////// Destructuring Objects
+const { title, author, ISBN } = books[0];
+console.log(title, author, ISBN);
+
+const { keywords: tags } = books[0];
+console.log(tags);
+
+const { language, programmingLanguage = 'unknown' } = books[6];
+console.log(books[6]);
+// 2.4
+let bookTitle = 'unknown';
+let bookAuthor = 'unknown';
+
+// const { title: bookTitle, author: bookAuthor } = books;
