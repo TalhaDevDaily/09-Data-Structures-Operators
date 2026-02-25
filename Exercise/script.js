@@ -261,4 +261,11 @@ console.log(books[6]);
 let bookTitle = 'unknown';
 let bookAuthor = 'unknown';
 
-// const { title: bookTitle, author: bookAuthor } = books;
+({ title: bookTitle, author: bookAuthor } = books[0]);
+
+const {
+  thirdParty: {
+    goodreads: { rating: bookRating },
+  },
+} = books[0];
+console.log(bookRating);
