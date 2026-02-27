@@ -269,3 +269,13 @@ const {
   },
 } = books[0];
 console.log(bookRating);
+
+function printBookInfo({ title, author, year = `year unknown` }) {
+  console.log(`${title} by ${author}, ${year}`);
+}
+
+printBookInfo({
+  title: `Title Here`,
+  author: `Author Here`,
+  year: 2012,
+});
