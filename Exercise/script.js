@@ -279,3 +279,11 @@ printBookInfo({
   author: `Author Here`,
   year: 2012,
 });
+
+const bookAuthors = [...books[0].author, ...books[1].author];
+console.log(bookAuthors);
+
+function spellWord(spread) {
+  console.log(...spread);
+}
+spellWord('talha');
