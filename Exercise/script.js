@@ -225,6 +225,13 @@ const books = [
   },
 ];
 
+/////////////////////////////////////////////
+////////// Rest Pattern and Parameters
+const [mainKeyboard, ...rest] = books[0].keywords;
+console.log(mainKeyboard, rest);
+
+const {bookPublisher} = 
+
 /*
 /////////////////////////////////////////////
 ////////// Destructuring Arrays
