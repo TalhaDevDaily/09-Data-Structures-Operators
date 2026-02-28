@@ -70,6 +70,24 @@ const restaurant = {
   },
 };
 
+////////////////////////////////////////
+//////////////// Short Circuiting (&& and ||)
+// Logical operators can use ANY data type, return ANY data type, and short-circuiting
+console.log(3 || 'Talha');
+console.log('' || 'Talha');
+console.log(true || 0);
+console.log(undefined || null);
+console.log(undefined || 0 || '' || 'Hello' || 23 || null);
+
+restaurant.numGuests = 23;
+const guest1 = restaurant.numGuests ? restaurant.numGuests : 10;
+console.log(guest1);
+
+restaurant.numGuests;
+
+// const guest2 = restaurant.numGuests || 10;
+// console.log(guest2);
+
 /*
 ////////////////////////////////////////
 //////////////// Rest Pattern and Parameters

@@ -236,7 +236,7 @@ console.log(bookPublisher, restOfBook);
 function printBookAuthorsCount(title, ...authors) {
   console.log(`The book ${title} has ${authors.length} authors`);
 }
-printBookAuthorsCount(books[0]);
+printBookAuthorsCount('Silly Book', 'Silly Name', 'Another Silly Name');
 
 /*
 /////////////////////////////////////////////
