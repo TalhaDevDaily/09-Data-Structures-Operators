@@ -230,7 +230,13 @@ const books = [
 const [mainKeyboard, ...rest] = books[0].keywords;
 console.log(mainKeyboard, rest);
 
-const {bookPublisher} = 
+const { publisher: bookPublisher, ...restOfBook } = books[1];
+console.log(bookPublisher, restOfBook);
+
+function printBookAuthorsCount(title, ...authors) {
+  console.log(`The book ${title} has ${authors.length} authors`);
+}
+printBookAuthorsCount(books[0]);
 
 /*
 /////////////////////////////////////////////
@@ -254,6 +260,7 @@ const {bookPublisher} =
 // console.log(fiveStarRatings, oneStarRatings, threeStarRatings);
 */
 
+/*
 /////////////////////////////////////////////
 ////////// Destructuring Objects
 const { title, author, ISBN } = books[0];
@@ -294,3 +301,4 @@ function spellWord(spread) {
   console.log(...spread);
 }
 spellWord('talha');
+*/
