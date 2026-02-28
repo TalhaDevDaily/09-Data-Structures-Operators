@@ -70,9 +70,9 @@ const restaurant = {
   },
 };
 
+/*
 ////////////////////////////////////////
 //////////////// Rest Pattern and Parameters
-
 // 2) Functions
 const add = function (...numbers) {
   let sum = 0;
@@ -106,6 +106,7 @@ console.log(pizza, risotto, otherFood);
 // Objects
 const { sat, ...weekdays } = restaurant.openingHours;
 console.log(sat, weekdays);
+*/
 
 /*
 ////////////////////////////////////////
